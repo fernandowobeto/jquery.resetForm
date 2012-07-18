@@ -1,0 +1,43 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="jquery.resetForm.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#btn_resetar').click(function(){
+          $('form').resetForm();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text"><br>
+      <input type="checkbox"><br>
+      <textarea></textarea><br>
+      <select>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select><br>
+      <select multiple>
+        <option value="0">Fernando Wobeto</option>
+        <option value="1">Gregori Maus</option>
+        <option value="2">Daniel Borba Cana</option>
+        <option value="3">Pedro Cavalheiro</option>
+        <option value="4">Émerson Engroff</option>
+        <option value="5">Gelson Francisco Zambon</option>
+        <option value="6">Fabrício Silva</option>
+      </select><br>
+      <input type="text"><br>
+      <input type="button" value="Resetar" id="btn_resetar">
+    </form>
+  </body>
+</html>
